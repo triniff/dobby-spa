@@ -6,3 +6,7 @@
 	font-weight: bold;
 	padding: 10px 0;
 }
+@mixin titulo-h3(){
+	padding: 10px 0;
+	color: $color-texto-welcome;
+}

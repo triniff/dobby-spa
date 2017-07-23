@@ -5831,7 +5831,7 @@ body {
 .therapy {
   background-color: #e9e0b7;
   padding-bottom: 40px;
-  border-bottom: 1px solid #333333; }
+  border-bottom: 2px solid #dbbe84; }
   .therapy img {
     border-radius: 100%;
     border: 10px solid #dbbe84;
@@ -5848,5 +5848,34 @@ body {
     font-size: 10px;
     padding: 5px;
     color: #333333; }
+
+.welcome {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+  border-bottom: 2px solid #dbbe84; }
+  .welcome .text-welcome {
+    padding: 0 80px; }
+  .welcome img {
+    border-radius: 20px; }
+  .welcome p {
+    font-size: 13px;
+    padding: 10px 0;
+    padding: 0;
+    text-align: left; }
+  .welcome ul {
+    padding: 20px 0; }
+    .welcome ul li {
+      font-size: 13px;
+      padding: 10px 0;
+      padding: 5px 0;
+      text-align: left;
+      list-style: none; }
+  .welcome h3 {
+    padding: 10px 0;
+    color: #d96c41; }
+  .welcome i {
+    padding-right: 10px;
+    color: #d96c41;
+    font-size: 18px; }
 
 /*# sourceMappingURL=main.css.map */

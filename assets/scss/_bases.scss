@@ -40,7 +40,7 @@ body{
 .therapy{
 	background-color: #e9e0b7;
 	padding-bottom: 40px;
-	border-bottom: 1px solid $color-texto-primario;
+	border-bottom: 2px solid $color-texto-secundario;
 	img{
 		border-radius: 100%;
 		border: 10px solid  $color-texto-secundario;
@@ -58,5 +58,38 @@ body{
 		font-size: 10px;
 		padding: 5px;
 		color: $color-texto-primario;
+	}
+}
+.welcome{
+	background-color: #f4f4f4;
+	padding: 40px 0;
+	border-bottom: 2px solid $color-texto-secundario;
+	.text-welcome{
+		padding: 0 80px;
+	}
+	img{
+		border-radius: 20px;
+	}
+	p{
+		@include textos-p();
+			padding: 0;
+			text-align: left;
+	}
+	ul{
+		padding: 20px 0;
+		li{
+			@include textos-p();
+			padding: 5px 0;
+			text-align: left;
+			list-style: none;
+		}
+	}
+	h3{
+		@include titulo-h3()
+	}
+	i{
+		padding-right: 10px;
+		color: $color-texto-welcome;
+		font-size: 18px;
 	}
 }
