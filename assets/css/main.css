@@ -5801,6 +5801,7 @@ body {
   text-align: center;
   margin: 0 auto; }
 
+/*NAVBAR*/
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   background-color: #2f1f1f;
   border-radius: none;
@@ -5813,12 +5814,17 @@ body {
 .navbar-nav {
   width: 100%;
   text-align: center; }
-  .navbar-nav > li {
+  .navbar-nav li {
     float: none;
     display: inline-block; }
 
 .navbar-default .navbar-nav .active a {
   background-color: transparent;
   color: #dbbe84; }
+
+/*SLIDER*/
+.carousel {
+  margin-top: -21px;
+  border-bottom: 4px solid #2f1f1f; }
 
 /*# sourceMappingURL=main.css.map */
