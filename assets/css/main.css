@@ -5827,4 +5827,26 @@ body {
   margin-top: -21px;
   border-bottom: 4px solid #2f1f1f; }
 
+/*therapy*/
+.therapy {
+  background-color: #e9e0b7;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #333333; }
+  .therapy img {
+    border-radius: 100%;
+    border: 10px solid #dbbe84;
+    margin-top: -50px; }
+  .therapy p {
+    font-size: 13px;
+    padding: 10px 0;
+    color: #333333; }
+  .therapy h4 {
+    font-weight: bold;
+    padding: 10px 0; }
+  .therapy a {
+    background-color: #dbbe84;
+    font-size: 10px;
+    padding: 5px;
+    color: #333333; }
+
 /*# sourceMappingURL=main.css.map */

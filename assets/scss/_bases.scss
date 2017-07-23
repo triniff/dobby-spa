@@ -35,3 +35,28 @@ body{
 	border-bottom: 4px solid $color-fondo;
 
 }
+
+/*therapy*/
+.therapy{
+	background-color: #e9e0b7;
+	padding-bottom: 40px;
+	border-bottom: 1px solid $color-texto-primario;
+	img{
+		border-radius: 100%;
+		border: 10px solid  $color-texto-secundario;
+		margin-top: -50px;
+	}
+	p{
+		@include textos-p();
+		color: $color-texto-primario;
+	}
+	h4{
+		@include titulo-h4()
+	}
+	a{
+		background-color: $color-texto-secundario;
+		font-size: 10px;
+		padding: 5px;
+		color: $color-texto-primario;
+	}
+}
