@@ -5878,4 +5878,25 @@ body {
     color: #d96c41;
     font-size: 18px; }
 
+.about {
+  background-color: #4a3a3a;
+  padding: 60px 0 20px;
+  color: #dbbe84;
+  border-bottom: 2px solid #f4f4f4; }
+  .about p {
+    font-size: 13px;
+    padding: 10px 0; }
+  .about .left {
+    text-align: left; }
+    .about .left img {
+      float: right;
+      padding: 20px;
+      border-radius: 20px; }
+  .about .right {
+    text-align: right; }
+    .about .right img {
+      float: left;
+      padding: 20px;
+      border-radius: 20px; }
+
 /*# sourceMappingURL=main.css.map */

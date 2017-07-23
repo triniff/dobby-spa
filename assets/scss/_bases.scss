@@ -61,7 +61,7 @@ body{
 	}
 }
 .welcome{
-	background-color: #f4f4f4;
+	background-color: $color-fondo-welome;
 	padding: 40px 0;
 	border-bottom: 2px solid $color-texto-secundario;
 	.text-welcome{
@@ -91,5 +91,30 @@ body{
 		padding-right: 10px;
 		color: $color-texto-welcome;
 		font-size: 18px;
+	}
+}
+.about{
+	background-color: $color-fondo-about;
+	padding: 60px 0 20px;
+	color: $color-texto-secundario;
+	border-bottom: 2px solid $color-fondo-welome;
+	p{
+		@include textos-p();
+	}
+	.left{
+		text-align: left;
+		img{
+			float: right;
+			padding: 20px;
+			border-radius: 20px;
+		}
+	}
+	.right{
+		text-align: right;
+		img{
+			float: left;
+			padding: 20px;
+			border-radius: 20px;	
+		}
 	}
 }
