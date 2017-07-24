@@ -5943,5 +5943,8 @@ body {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid #dbbe84; }
+  .footer .people img {
+    float: left;
+    padding: 0 15px 15px 0; }
 
 /*# sourceMappingURL=main.css.map */

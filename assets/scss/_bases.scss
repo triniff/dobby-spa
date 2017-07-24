@@ -163,4 +163,10 @@ body{
 		padding-top: 20px;
 		border-top: 1px solid $color-texto-secundario;
 	}
+	.people{
+		img{
+			float: left;
+			padding: 0 15px 15px 0;
+		}
+	}
 }
