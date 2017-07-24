@@ -10,3 +10,18 @@
 	padding: 10px 0;
 	color: $color-texto-welcome;
 }
+@mixin decoracion-line(){
+	width: 250px;
+	border-bottom: 1px solid $color-texto-secundario;
+	position: absolute;
+}
+@mixin decoracion-icon(){
+	position: absolute;
+	font-size: 12px;
+	top: 54px;
+}
+@mixin redes-iconos(){
+	background-color: $color-fondo-welome;
+	border-radius: 100%;
+	border: 4px solid $color-texto-welcome;
+}
