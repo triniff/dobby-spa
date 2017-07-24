@@ -5797,30 +5797,49 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+/* mixin media */
+/*media variables*/
 body {
   text-align: center;
   margin: 0 auto; }
 
 /*NAVBAR*/
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  background-color: #2f1f1f;
+.navbar-default {
   border-radius: none;
-  padding: 0; }
-  .navbar-default .navbar-collapse li a, .navbar-default .navbar-form li a {
+  padding: 0;
+  background-color: #2f1f1f;
+  margin-bottom: 0; }
+  .navbar-default .navbar-collapse li a {
     text-align: center;
     margin: 0 auto;
     color: #fff; }
-
-.navbar-nav {
-  width: 100%;
-  text-align: center; }
-  .navbar-nav li {
-    float: none;
-    display: inline-block; }
-
-.navbar-default .navbar-nav .active a {
-  background-color: transparent;
-  color: #dbbe84; }
+  .navbar-default .navbar-collapse li a:hover {
+    background-color: transparent;
+    color: #d96c41; }
+  .navbar-default .navbar-collapse .active a {
+    background-color: transparent;
+    color: #dbbe84; }
+  .navbar-default .navbar-collapse .active a:hover {
+    background-color: transparent; }
+  .navbar-default .navbar-collapse .active a:focus {
+    background-color: transparent; }
+  .navbar-default .navbar-collapse .navbar-nav {
+    width: 100%;
+    text-align: center; }
+    .navbar-default .navbar-collapse .navbar-nav li {
+      float: none;
+      display: inline-block; }
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+      .navbar-default .navbar-collapse .navbar-nav {
+        text-align: left; }
+        .navbar-default .navbar-collapse .navbar-nav li {
+          display: block; } }
+  .navbar-default .navbar-collapse .dropdown-menu {
+    background-color: #2f1f1f; }
+  .navbar-default .navbar-collapse .open a {
+    background-color: transparent; }
+  .navbar-default .navbar-collapse .open a:focus {
+    background-color: transparent; }
 
 /*SLIDER*/
 .carousel {
@@ -5836,6 +5855,9 @@ body {
     border-radius: 100%;
     border: 10px solid #dbbe84;
     margin-top: -50px; }
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+      .therapy img {
+        margin-top: 20px; } }
   .therapy p {
     font-size: 13px;
     padding: 10px 0;
@@ -5849,6 +5871,7 @@ body {
     padding: 5px;
     color: #333333; }
 
+/*welcome*/
 .welcome {
   background-color: #f4f4f4;
   padding: 40px 0;
@@ -5856,7 +5879,8 @@ body {
   .welcome .text-welcome {
     padding: 0 80px; }
   .welcome img {
-    border-radius: 20px; }
+    border-radius: 20px;
+    width: 100%; }
   .welcome p {
     font-size: 13px;
     padding: 10px 0;
@@ -5878,6 +5902,7 @@ body {
     color: #d96c41;
     font-size: 18px; }
 
+/*about*/
 .about {
   background-color: #4a3a3a;
   padding: 60px 0 20px;
@@ -5921,12 +5946,14 @@ body {
         font-size: 12px;
         top: 54px; }
 
+/*footer*/
 .footer {
   background-color: #2f1f1f;
   color: #dbbe84;
   padding: 30px 0;
   text-align: left; }
   .footer .redes img {
+    width: 100%;
     background-color: #f4f4f4;
     border-radius: 100%;
     border: 4px solid #d96c41; }

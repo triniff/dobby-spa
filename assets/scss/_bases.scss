@@ -3,32 +3,64 @@ body{
 	margin: 0 auto;
 }
 /*NAVBAR*/
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
-	background-color: $color-fondo;
+.navbar-default{
 	border-radius: none;
 	padding: 0;
-	li{
-		a{
-			text-align: center;
-			margin: 0 auto;
-			color: #fff;
+	background-color: $color-fondo;
+	margin-bottom: 0;
+	.navbar-collapse{
+		li{
+			a{
+				text-align: center;
+				margin: 0 auto;
+				color: #fff;
+			}
+			a:hover{
+				background-color: transparent;
+				color: $color-texto-welcome;
+			}
+		}
+		.active{
+			a{
+				background-color: transparent;
+				color: $color-texto-secundario;
+			}
+			a:hover{
+				background-color: transparent;
+			}
+			a:focus{
+				background-color:transparent;;
+			}
+		}
+		.navbar-nav {
+		    width: 100%;
+		    text-align: center;
+		     li {
+		      float: none;
+		      display: inline-block;
+		    }
+		    @include break(handhelds) { 
+				text-align: left;
+				li{display: block;}
+			}
+		}
+		.dropdown-menu{
+			background-color:$color-fondo;
+		}
+		.open{
+			a{
+				background-color:transparent;
+			}
+			a:focus{
+				background-color:transparent;
+			}
 		}
 	}
+
+	
 }
 
- .navbar-nav {
-    width: 100%;
-    text-align: center;
-     li {
-      float: none;
-      display: inline-block;
-    }
-  }
 
-.navbar-default .navbar-nav .active a{
-	background-color: transparent;
-	color: $color-texto-secundario;
-}
 /*SLIDER*/
 .carousel{
 	margin-top: -21px;
@@ -45,6 +77,9 @@ body{
 		border-radius: 100%;
 		border: 10px solid  $color-texto-secundario;
 		margin-top: -50px;
+		@include break(handhelds) { 
+			margin-top: 20px;
+		}
 	}
 	p{
 		@include textos-p();
@@ -60,6 +95,7 @@ body{
 		color: $color-texto-primario;
 	}
 }
+/*welcome*/
 .welcome{
 	background-color: $color-fondo-welome;
 	padding: 40px 0;
@@ -69,6 +105,7 @@ body{
 	}
 	img{
 		border-radius: 20px;
+		width: 100%;
 	}
 	p{
 		@include textos-p();
@@ -93,6 +130,7 @@ body{
 		font-size: 18px;
 	}
 }
+/*about*/
 .about{
 	background-color: $color-fondo-about;
 	padding: 60px 0 20px;
@@ -138,6 +176,7 @@ body{
 		}
 	}
 }
+/*footer*/
 .footer{
 	background-color: $color-fondo;
 	color: $color-texto-secundario;

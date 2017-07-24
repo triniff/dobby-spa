@@ -21,7 +21,16 @@
 	top: 54px;
 }
 @mixin redes-iconos(){
+	width: 100%;
 	background-color: $color-fondo-welome;
 	border-radius: 100%;
 	border: 4px solid $color-texto-welcome;
+}
+
+
+/* mixin media */
+@mixin break($media) {
+	@if $media == handhelds {
+		@media only screen and (min-width: $break-small) and (max-width: $break-medium) { @content; }
+	}
 }
